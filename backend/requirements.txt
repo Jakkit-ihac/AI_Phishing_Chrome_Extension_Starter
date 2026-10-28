@@ -1,0 +1,11 @@
+﻿fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+pandas
+numpy
+scikit-learn
+joblib
+httpx
+pytest
+pytest-cov

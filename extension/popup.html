@@ -1,0 +1,67 @@
+﻿<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Phishing Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="brand-icon">🛡️</div>
+      <div>
+        <h1>AI Phishing Detector</h1>
+        <p class="subtitle">Website Security Scanner</p>
+      </div>
+    </header>
+
+    <section class="connection">
+      <span id="apiDot" class="dot"></span>
+      <span id="apiStatus">กำลังตรวจสอบ API...</span>
+    </section>
+
+    <section class="url-card">
+      <div class="section-label">CURRENT WEBSITE</div>
+      <div id="currentUrl" class="url">กำลังอ่าน URL...</div>
+    </section>
+
+    <section id="resultCard" class="result-card pending">
+      <div id="resultIcon" class="result-icon">⏳</div>
+      <h2 id="resultTitle">กำลังวิเคราะห์</h2>
+      <p id="resultDescription">กำลังส่ง URL ไปยัง AI Model</p>
+
+      <div class="score-section">
+        <div class="score-heading">
+          <span>คะแนนความเสี่ยง</span>
+          <strong id="riskScore">--%</strong>
+        </div>
+        <div class="progress-track">
+          <div id="scoreBar" class="progress-bar"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details">
+      <h3>เหตุผลจากการวิเคราะห์</h3>
+      <ul id="reasons">
+        <li>กำลังรอผลจาก API...</li>
+      </ul>
+    </section>
+
+    <p class="disclaimer">
+      ผลจาก AI เป็นเพียงการประเมินเบื้องต้น
+      ไม่สามารถรับประกันได้ว่าเว็บไซต์ปลอดภัย
+    </p>
+
+    <button id="scanButton" type="button">ตรวจสอบอีกครั้ง</button>
+
+    <footer>
+      <span id="modelName">Model: --</span>
+      <span id="processingTime">เวลา: --</span>
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

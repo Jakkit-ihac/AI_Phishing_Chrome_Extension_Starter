@@ -1,0 +1,50 @@
+{
+  "model_name": "random_forest",
+  "dataset": "held-out test set",
+  "threshold": 0.5,
+  "samples_evaluated": 22794,
+  "invalid_urls_skipped": 0,
+  "accuracy": 0.948539089234009,
+  "precision": 0.7681324957167333,
+  "recall": 0.8816781383153065,
+  "f1": 0.8209980161757974,
+  "pr_auc_average_precision": 0.9226882506326038,
+  "confusion_matrix": [
+    [
+      18931,
+      812
+    ],
+    [
+      361,
+      2690
+    ]
+  ],
+  "classification_report": {
+    "legitimate_0": {
+      "precision": 0.9812875803441841,
+      "recall": 0.9588714987590539,
+      "f1-score": 0.9699500448315614,
+      "support": 19743.0
+    },
+    "phishing_1": {
+      "precision": 0.7681324957167333,
+      "recall": 0.8816781383153065,
+      "f1-score": 0.8209980161757974,
+      "support": 3051.0
+    },
+    "accuracy": 0.948539089234009,
+    "macro avg": {
+      "precision": 0.8747100380304587,
+      "recall": 0.9202748185371802,
+      "f1-score": 0.8954740305036795,
+      "support": 22794.0
+    },
+    "weighted avg": {
+      "precision": 0.9527565562501965,
+      "recall": 0.948539089234009,
+      "f1-score": 0.9500126648443395,
+      "support": 22794.0
+    }
+  },
+  "probability_calibration": "not calibrated"
+}
